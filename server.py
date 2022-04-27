@@ -24,7 +24,7 @@ def name_guesser(name):
     gender_response = requests.get(url=gender_end_point, params=params).json()
 
     age = age_response["age"]
-    gName = age_response["name"]
+    gName = age_response["name"].title()
     gender = gender_response["gender"]
     probability = gender_response["probability"]
 
