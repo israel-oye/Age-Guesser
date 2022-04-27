@@ -2,12 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# @app.route('/')
-# def home():
-#     from datetime import datetime
-#     c_year = datetime.now().year
-#     return render_template("index.html", year = c_year)
-
 @app.route('/guess/<name>')
 def name_guesser(name):
 
